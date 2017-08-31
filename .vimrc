@@ -1,38 +1,27 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" vim plugins
-
-Plugin 'morhetz/gruvbox'
-
-
-call vundle#end()            " required
-"filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
+set nocompatible
+filetype on
+syntax on
 set nu
-set autoindent
+set relativenumber
 set tabstop=4
-syntax enable
-set showmatch
-colorscheme gruvbox 
-set bg=dark
-autocmd FileType python inoremap :<CR> :<CR><Tab>
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set ruler
+set autoindent
+filetype plugin indent on
+
+"setting leader key to ,
+let mapleader=","
+
+"shortcut for sourcing the .vimrc
+nnoremap sv :source $MYVIMRC<cr>
+
+"simulating CTR-A
+nnoremap <c-a> ggvGg_
+
+"simulating CTR-C
+vnoremap <c-c> v`<"+y`>
+
+"simulating CTR-V
+nnoremap <c-v> "+
