@@ -21,7 +21,7 @@ let maplocalleader = "\<cr>"
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 "simulating CTR-A
-nnoremap <c-a> ggvGg_
+nnoremap <c-a> ggvG$
 
 "simulating CTR-C
 vnoremap <c-c> v`<"+y`>
