@@ -1,6 +1,8 @@
 set nocompatible
 filetype on
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 set nu
 set relativenumber
 set tabstop=4
@@ -29,7 +31,6 @@ vnoremap <c-c> v`<"+y`>
 "simulating CTR-V
 nnoremap <c-v> "+p
 
-colorscheme delek 
 
 set textwidth=120
 
@@ -64,6 +65,15 @@ augroup filetype_java
 
     "abbreviation for System.out.println
     autocmd FileType java iabbrev sysout System.out.println
+    
+    "for automatically inserting the closing curly braces on the encounter of {<cr
+    autocmd FileType java inoremap <buffer> {<cr> {<cr>}<esc>ko
+
+    "for completing the parantheses and getting into insert mode
+    autocmd FileType java inoremap <buffer> (<space> ()<esc>i
+
+    "for auto-completing double quotes and getting into the insert mode
+    autocmd FileType java inoremap <buffer> "<space> ""<esc>i
 
 augroup end
 
