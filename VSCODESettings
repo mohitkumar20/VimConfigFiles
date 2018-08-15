@@ -1,0 +1,28 @@
+{
+    "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+    "workbench.iconTheme": "vscode-icons",
+    "vim.overrideCopy": false,
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    "vim.cmdLineInitialColon": true,
+    "vim.ignorecase": true,
+    "vim.statusBarColorControl": true,
+    "vim.searchHighlightColor": "rgba(150, 150, 255, 0.3)",
+    "vim.scroll": 20,
+    "vim.handleKeys": {
+        "<C-*>": true
+    },
+    "zenMode.centerLayout": false,
+    "window.zoomLevel": 0,
+    "vsicons.dontShowNewVersionMessage": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "eslint.enable": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.minimap.enabled": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#5f00af",
+        "statusBar.noFolderBackground": "#5f00af",
+        "statusBar.debuggingBackground": "#5f00af"
+    },
+    "editor.lineNumbers": "relative",
+}
